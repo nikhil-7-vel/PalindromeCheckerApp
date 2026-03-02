@@ -1,7 +1,22 @@
 public class Palindrome {
+
     public static void main(String[] args) {
-        System.out.println("welcome to palindrome" );
-        System.out.println("version 3.12");
-        System.out.println("This was done by Nikhil");
+
+        // Hardcoded string (String Literal)
+        String word = "madam";
+
+        // Reverse the string
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+
+        // Conditional statement to check palindrome
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome.");
+        } else {
+            System.out.println(word + " is NOT a Palindrome.");
+        }
     }
 }
